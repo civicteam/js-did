@@ -1,5 +1,5 @@
 {
-  "name": "pkh-did-resolver",
+  "name": "@civic/pkh-did-resolver",
   "version": "1.2.0",
   "description": "did:pkh method resolver",
   "keywords": [
@@ -11,12 +11,8 @@
   "author": "Joel Thorstensson <oed@3box.io>",
   "homepage": "https://3boxlabs.com",
   "license": "(Apache-2.0 OR MIT)",
-  "type": "module",
-  "main": "dist/index.js", 
+  "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "exports": {
-    ".": "./dist/index.js"
-  },
   "files": [
     "dist"
   ],
@@ -33,7 +29,6 @@
     "test": "node --experimental-vm-modules ../../node_modules/jest/bin/jest.js",
     "test:ci": "pnpm run test --ci --coverage",
     "prepare": "pnpm run build",
-    "prepublishOnly": "package-check",
     "size": "./node_modules/.bin/size-limit",
     "analyze": "./node_modules/.bin/size-limit --why"
   },
